@@ -18,8 +18,14 @@ function add() {
     const initialResult = currentResult;
     currentResult += enteredNumber;
     createAndWriteLog('+', initialResult, enteredNumber)
-    logEntries.push(enteredNumber)
-    console.log(logEntries[1])
+    const logEntry = {
+        operation: 'ADD',
+        prevResult: initialResult,
+        number: enteredNumber,
+        result: currentResult
+    };
+    logEntries.push(logEntry)
+    console.log(logEntries)
 }
 
 function subtract() {
@@ -51,11 +57,11 @@ multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', divide);
 
 
-let numbers = [10, 3, -1];
+// let numbers = [10, 3, -1];
 
-function solve() {
-    numbers.push(8)
-    numbers.push(2)
-}
-solve()
-console.log(numbers)
+// function solve() {
+//     numbers.push(8)
+//     numbers.push(2)
+// }
+// solve()
+// console.log(numbers)
