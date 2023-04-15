@@ -19,10 +19,5 @@ function transform(num, double){
 
 console.log(transform(10,double))
 
-// function transform(num, double){
-//     return (double(num))
-// } 
-
-// console.log(transform(10,double))
 
 
