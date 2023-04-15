@@ -1,5 +1,6 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
+let logEntries = [];
 
 // Gets input from input field
 function getUserNumberInput() {
@@ -17,6 +18,8 @@ function add() {
     const initialResult = currentResult;
     currentResult += enteredNumber;
     createAndWriteLog('+', initialResult, enteredNumber)
+    logEntries.push(enteredNumber)
+    console.log(logEntries[1])
 }
 
 function subtract() {
@@ -48,5 +51,11 @@ multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', divide);
 
 
+let numbers = [10, 3, -1];
 
-
+function solve() {
+    numbers.push(8)
+    numbers.push(2)
+}
+solve()
+console.log(numbers)
