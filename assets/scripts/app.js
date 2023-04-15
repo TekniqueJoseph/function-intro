@@ -56,7 +56,6 @@ subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
 divideBtn.addEventListener('click', divide);
 
-
 // let numbers = [10, 3, -1];
 
 // function solve() {
@@ -65,3 +64,4 @@ divideBtn.addEventListener('click', divide);
 // }
 // solve()
 // console.log(numbers)
+
