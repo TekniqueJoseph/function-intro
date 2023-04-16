@@ -57,7 +57,7 @@ function divide() {
     writeToLog('DIVIDE', initialResult, enteredNumber, currentResult)
 }
 
-// event listeners
+// event listeners for vendor methods
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
