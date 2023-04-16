@@ -13,7 +13,7 @@ function createAndWriteLog(operator, resultBeforeCalc, calcNum) {
     outputResult(currentResult, calcDesc); // from vendor file
 }
 
-// Gets and Creates Object logEntry
+// Gets and creates Object logEntry
 function writeToLog(opId, prevResult, opNum, newResult) {
     const logEntry = {
         operation: opId,
